@@ -45,13 +45,13 @@ MediaToAscii <path_to_file> [width] [--save]
 MediaToAscii photo.jpg
 
 # Convert an image at width 160
-MediaToAscii photo.png 160
+MediaToAscii path/to/photo.png 160
 
 # Convert and save to file
-MediaToAscii photo.jpg 120 --save
+MediaToAscii path/to/photo.jpg 120 --save
 
 # Play a video as ASCII animation
-MediaToAscii clip.mp4 80
+MediaToAscii path/to/clip.mp4 80
 ```
 
 ### Supported Formats
