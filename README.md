@@ -42,7 +42,7 @@ MediaToAscii <path_to_file> [width] [--save]
 
 ```bash
 # Convert an image with default width
-MediaToAscii photo.jpg
+MediaToAscii path/to/photo.jpg
 
 # Convert an image at width 160
 MediaToAscii path/to/photo.png 160
