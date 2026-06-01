@@ -18,17 +18,17 @@ A C# command-line tool that converts images and videos into ASCII art. Images ar
 
 Install NuGet dependencies:
 
-`````bash
+```bash
 dotnet add package OpenCvSharp4
 dotnet add package OpenCvSharp4.runtime.win   # or .linux / .osx
 dotnet add package System.Drawing.Common
-\```
+```
 
 ## Usage
 
-````bash
+```bash
 MediaToAscii <path_to_file> [width] [--save]
-\```
+```
 
 ### Arguments
 
@@ -52,7 +52,7 @@ MediaToAscii photo.jpg 120 --save
 
 # Play a video as ASCII animation
 MediaToAscii clip.mp4 80
-\```
+```
 
 ### Supported Formats
 
@@ -71,24 +71,23 @@ Each pixel's brightness is computed using the standard luminance formula:
 
 ```
 brightness = (0.299 × R + 0.587 × G + 0.114 × B) / 255
-````
+```
 
 That value maps to a character from the ramp ` .,;:+*?%S#@` (dark → light). For images with transparency, brightness is multiplied by the alpha value. Video frames are auto-resized to fit your terminal.
 
 ## Build
 
-````bash
+```bash
 dotnet build
 dotnet run -- photo.jpg 120 --save
-\```
+```
 
 Self-contained executable:
 
 ```bash
 dotnet publish -c Release -r win-x64 --self-contained
-\```
+```
 
 ## License
 
 MIT
-```
