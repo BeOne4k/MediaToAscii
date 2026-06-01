@@ -87,7 +87,3 @@ Self-contained executable:
 ```bash
 dotnet publish -c Release -r win-x64 --self-contained
 ```
-
-## License
-
-MIT
