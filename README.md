@@ -52,6 +52,8 @@ MediaToAscii path/to/photo.jpg 120 --save
 
 # Play a video as ASCII animation
 MediaToAscii path/to/clip.mp4 80
+
+> ⚠️ For video playback, widths above 80 are not recommended — higher values may cause flickering or frame tearing in the terminal.
 ```
 
 ### Supported Formats
